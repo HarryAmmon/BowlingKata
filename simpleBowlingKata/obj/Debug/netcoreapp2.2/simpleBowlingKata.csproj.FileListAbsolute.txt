@@ -1,0 +1,11 @@
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\bin\Debug\netcoreapp2.2\simpleBowlingKata.deps.json
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\bin\Debug\netcoreapp2.2\simpleBowlingKata.runtimeconfig.json
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\bin\Debug\netcoreapp2.2\simpleBowlingKata.runtimeconfig.dev.json
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\bin\Debug\netcoreapp2.2\simpleBowlingKata.dll
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\bin\Debug\netcoreapp2.2\simpleBowlingKata.pdb
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\obj\Debug\netcoreapp2.2\simpleBowlingKata.csprojAssemblyReference.cache
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\obj\Debug\netcoreapp2.2\simpleBowlingKata.csproj.CoreCompileInputs.cache
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\obj\Debug\netcoreapp2.2\simpleBowlingKata.AssemblyInfoInputs.cache
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\obj\Debug\netcoreapp2.2\simpleBowlingKata.AssemblyInfo.cs
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\obj\Debug\netcoreapp2.2\simpleBowlingKata.dll
+C:\Users\ammonh\learningNET\simpleBowlingKata\simpleBowlingKata\simpleBowlingKata\obj\Debug\netcoreapp2.2\simpleBowlingKata.pdb
