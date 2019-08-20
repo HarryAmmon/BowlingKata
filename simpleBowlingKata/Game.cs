@@ -16,7 +16,7 @@ namespace simpleBowlingKata
             Score = 0;
 
             this.Rolls = Rolls;
-
+            // Create an array of rolls
             Frames = new Frame[Rolls.Length];
             for (int i = 0; i < Rolls.Length - 1; i++)
             {
@@ -24,7 +24,7 @@ namespace simpleBowlingKata
             }
 
             Frames[Rolls.Length - 1] = new Frame(0, true);
-
+            // Parse values in the Rolls[][] with the corresponding frame and roll
             for (int i = 0; i < Rolls.Length; i++)
             {
                 for(int j = 0; j < Frames[i].Rolls.Length; j++)
@@ -38,9 +38,6 @@ namespace simpleBowlingKata
         public int calculateFinalScore()
         {
             int score = calculateBonusFrameScore();
-
-            //int frameStartIndex = 0;
-            //int rollStartIndex = 0;
 
             for (int i = 0; i < Frames.Length - 1; i++)
             {
@@ -61,7 +58,7 @@ namespace simpleBowlingKata
                 else if (Frames[i].Rolls[0] + Frames[i].Rolls[1] == 10)
                 {
                     Frames[i].Score += Frames[i].Rolls[0];
-                    Frames[i].Score += Frames[i].Rolls[1]; //Frames[nextRollLocation[0]].Rolls[nextRollLocation[1]];            // The total at this point should be 10
+                    Frames[i].Score += Frames[i].Rolls[1];  // The total at this point should be 10
                     Frames[i].Score += Frames[secondNextRollLocation[0]].Rolls[secondNextRollLocation[1]];
                 }
 
@@ -72,6 +69,7 @@ namespace simpleBowlingKata
                     Frames[i].Score += Frames[i].Rolls[1];
                 }
             }
+            // Total up the score
             for (int i = 0; i < Frames.Length; i++)
             {
                 score += Frames[i].Score;
@@ -90,30 +88,32 @@ namespace simpleBowlingKata
         /*
          *  Takes the location of the current roll and calcululates the location of the next one
          */
-        private int[] calculateNextRollIndex(int[] rollLocationIndex)//, int currentRollIndex)
+        private int[] calculateNextRollIndex(int[] rollLocationIndex)
         {
             // If the current frame is the bonus frame
-            if (Frames[rollLocationIndex[0]].isBonus) //|| Frames[rollLocationIndex[0]+1].isBonus)
+            if (Frames[rollLocationIndex[0]].isBonus)
             {
+                // The next roll will be in the same frame
                 int[] nextRollLocation = new int[] { rollLocationIndex[0], rollLocationIndex[1] + 1 };
                 return nextRollLocation;
             }
+            // If the current roll scores a strike
             else if (Frames[rollLocationIndex[0]].Rolls[rollLocationIndex[1]] == 10)
             {
-                //  the next roll will be the first roll of the next frame
-                int[] nextRollLocation = new int[] { rollLocationIndex[0] + 1, 0 };  // Frames[currentFrameIndex + 1].Rolls[0];
+                //  The next roll will be the first roll of the next frame
+                int[] nextRollLocation = new int[] { rollLocationIndex[0] + 1, 0 }; 
                 return nextRollLocation;
             }
-            // if the current roll is the second roll in the frame
+            // If the current roll is the second roll in the frame
             else if (rollLocationIndex[1] == 1)
             {
                 // the next roll will be the first roll of the next frame
-                int[] nextRollLocation = new int[] { rollLocationIndex[0] + 1, 0 }; // Frames[currentFrameIndex + 1].Rolls[0];
+                int[] nextRollLocation = new int[] { rollLocationIndex[0] + 1, 0 }; 
                 return nextRollLocation;
             }
             else
-            {
-                int[] nextRollLocation = new int[] { rollLocationIndex[0], rollLocationIndex[1] + 1 }; // Frames[currentFrameIndex].Rolls[currentRollIndex+1];
+            {   // The next roll will be in the same frame
+                int[] nextRollLocation = new int[] { rollLocationIndex[0], rollLocationIndex[1] + 1 }; 
                 return nextRollLocation;
             }
         }
