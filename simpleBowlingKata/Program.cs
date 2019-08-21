@@ -13,7 +13,7 @@ namespace simpleBowlingKata
                 new int[]{9, 1},
                 new int[]{9, 1},
                 new int[]{9, 1},
-                new int[]{9,1 },
+                new int[]{9, 1},
                 new int[]{9, 1},
                 new int[]{9, 1},
                 new int[]{9, 1},

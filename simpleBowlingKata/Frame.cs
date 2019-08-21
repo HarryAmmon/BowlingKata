@@ -15,6 +15,8 @@ namespace simpleBowlingKata
         {
             this.Score = 0;
             this.isBonus = isBonus;
+
+            // Sets the length of the Rolls array
             if (isBonus)
             {
                 Rolls = new int[3];
